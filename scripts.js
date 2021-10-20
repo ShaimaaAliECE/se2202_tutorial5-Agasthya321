@@ -26,10 +26,10 @@ function createGameBoard()
 }
 
 // Programatically add 'takeCell' as an event listener to all the buttons on the board
-let blue = document.querySelectorAll('button');
-for (let i=0; i<blue.length; i++)
+let btns = document.querySelectorAll('button');
+for (let i=0; i<btns.length; i++)
 {
-    blue[i].addEventListener('click', (event) => { takeCell(event)});
+    btns[i].addEventListener('click', (event) => { takeCell(event)});
 }
 
 // This function will be used to respond to a click event on any of the board buttons.
