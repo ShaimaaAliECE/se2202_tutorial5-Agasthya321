@@ -26,10 +26,10 @@ function createGameBoard()
 }
 
 // Programatically add 'takeCell' as an event listener to all the buttons on the board
-let blue = document.querySelectorAll('button');
-for (let i=0; i<blue.length; i++)
+let green = document.querySelectorAll('button');
+for (let i=0; i<green.length; i++)
 {
-    blue[i].addEventListener('click', (event) => { takeCell(event)});
+    green[i].addEventListener('click', (event) => { takeCell(event)});
 }
 
 // This function will be used to respond to a click event on any of the board buttons.
@@ -70,9 +70,9 @@ function isGameOver()
 {
     // This function returns true if all the buttons are disabled and false otherwise 
     let white = true;
-   for (let i = 0; i < blue.length; i++)
+   for (let i = 0; i < green.length; i++)
    {
-       if (!blue[i].disabled)
+       if (!green[i].disabled)
        {
            white = false;
        }
